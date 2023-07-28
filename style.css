@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Moirai+One&family=Poppins:wght@100;400&family=Satisfy&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    /* background: rgb(225, 231, 142); */
+    background-color: #FCFAF9;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    height: 100vh;
+
+}
+
+header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    z-index: -2;
+    overflow: hidden;
+}
+
+header .logo{
+    background: url(webp/logo.webp);
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+
+}
+
+
+
+
+header .navbar{
+    transform: translateY(20px) translateX(-20px);
+}
+
+header .navbar .btn a{
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 5;
+    font-size: medium;
+}
+
+
+header .navbar .btn{
+    padding: 2px 8px;
+    background: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+    z-index: 1;
+    margin-left: 20px;
+    padding: 5px 10px;
+}
+
+header .navbar .btn::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #252525;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    transform-origin: left;
+    border-radius: 5px;
+
+}
+
+header .navbar .btn:hover::before{
+    opacity: 1;
+}
+
+footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+    height: 70px;
+}
+
+footer a{
+    margin: 1rem;
+    color: gray;
+}
+
+footer a i{
+    font-size: 1.5rem;
+}
+
+main{
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+img{
+    height: 10%;
+    width: 30%;
+    margin: 20px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 10px rgb(168, 168, 168);
+}
+
+@media (max-width: 400px){
+
+
+    img{
+        width: 60%;
+        margin: 20px;
+        border-radius: 2px;
+        box-shadow: 1px 1px 10px rgb(168, 168, 168);
+    }
+
+    header{
+        width: 100%;
+        padding: 10px;
+    }
+
+    header .navbar .btn a{
+        font-size: 10px;
+    }
+
+    header .navbar{
+        transform: translateY(20px);
+    }
+
+    header .logo{
+        transform: translateX(-30px);
+    }
+}
+
+
+
+
