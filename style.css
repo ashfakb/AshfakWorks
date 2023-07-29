@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
 
-@keyframes preloading{
-    10%{height: 30%;}
-    50%{height: 50%;}
+@keyframes load{
+    10%{transform: scale(0.99);}
+    20%{transform: scale(0.98);}
+    30%{transform: scale(0.97);}
+    40%{transform: scale(0.96);}
+    50%{transform: scale(0.95);}
+    60%{transform: scale(0.96);}
+    70%{transform: scale(0.97);}
+    80%{transform: scale(0.98);}
+    90%{transform: scale(0.99);}
+    95%{transform: scale(1);}
 }
 
 *{
@@ -43,6 +51,12 @@ body{
     height: 40%;
     background-color: black;
     box-shadow: none;
+    animation-name: load;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+    animation-direction: alternate-reverse;
+    transition: transform 0.2s ease;
 }
 
 header{
