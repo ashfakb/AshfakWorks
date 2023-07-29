@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Moirai+One&family=Poppins:wght@100;400&family=Satisfy&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -17,7 +16,7 @@ body{
 }
 
 header{
-    height: 100px;
+    height: 60px;
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -30,22 +29,22 @@ header{
 
 header .logo{
     background: url(webp/logo.webp);
-    height: 150px;
     width: 150px;
+    height: 150px;
     background-size: cover;
-    transform: translateY(-10px);
+    transform: translateX(25px) translateY(-40px);
 }
 
 
 
 
 header .navbar{
-    transform: translateY(60px) translateX(-20px);
+    transform: translateY(22px) translateX(-35px);
 }
 
 header .navbar .btn a{
     color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Tektur', cursive;
     z-index: 5;
     font-size: large;
 }
@@ -58,7 +57,7 @@ header .navbar .btn{
     border: none;
     position: relative;
     z-index: 1;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 5px 10px;
 }
 
@@ -130,17 +129,25 @@ img{
         box-shadow: 1px 1px 10px rgb(168, 168, 168);
     }
 
+    
+
+    header .navbar .btn a{
+        font-size: 10px;
+    }
+
     header{
-        height: 60px;
+        height: 45px;
     }
 
 
     header .navbar{
-        transform:  translateX(-10px) translateY(20px);
+        transform:  translateY(20px);
     }
 
     header .logo{
-        transform: translateX(-20px) translateY(-45px);
+        height: 100px;
+        width: 100px;
+        transform: translateX(-10px) translateY(-22px);
     }
 }
 
