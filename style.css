@@ -19,7 +19,7 @@ body{
 header{
     height: 100px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     width: 100%;
     background-color: #333333;
@@ -33,21 +33,21 @@ header .logo{
     height: 150px;
     width: 150px;
     background-size: cover;
-
+    transform: translateY(-10px);
 }
 
 
 
 
 header .navbar{
-    transform: translateY(20px) translateX(-20px);
+    transform: translateY(60px) translateX(-20px);
 }
 
 header .navbar .btn a{
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     z-index: 5;
-    font-size: medium;
+    font-size: large;
 }
 
 
@@ -131,20 +131,16 @@ img{
     }
 
     header{
-        width: 100%;
-        padding: 10px;
+        height: 60px;
     }
 
-    header .navbar .btn a{
-        font-size: 10px;
-    }
 
     header .navbar{
-        transform: translateY(20px);
+        transform:  translateX(-10px) translateY(20px);
     }
 
     header .logo{
-        transform: translateX(-30px);
+        transform: translateX(-20px) translateY(-45px);
     }
 }
 
