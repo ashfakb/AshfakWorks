@@ -185,7 +185,7 @@ img{
 
 
     header .navbar{
-        transform:  translateY(20px);
+        transform:  translateY(20px) translateX(-20px);
     }
 
     header .logo{
