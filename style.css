@@ -191,7 +191,7 @@ img{
     header .logo{
         height: 100px;
         width: 100px;
-        transform: translateX(-10px) translateY(-22px);
+        transform:  translateY(-22px);
     }
 }
 
