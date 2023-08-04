@@ -50,7 +50,7 @@ body{
     width: max-content;
     height: 40%;
     background-color: black;
-    box-shadow: none;
+    filter: none;
     animation-name: load;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
@@ -101,7 +101,6 @@ header .navbar .btn{
     border: none;
     position: relative;
     z-index: 1;
-    margin-left: 10px;
     padding: 5px 10px;
 }
 
@@ -171,9 +170,7 @@ img{
         
     }
 
-    header .navbar .btn{
-        margin-left: 5px;
-    }
+    
 
     header .navbar .btn a{
         font-size: 10px;
