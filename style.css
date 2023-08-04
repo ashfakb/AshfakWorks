@@ -50,7 +50,6 @@ body{
     width: max-content;
     height: 40%;
     background-color: black;
-    filter: none;
     animation-name: load;
     animation-duration: 2.5s;
     animation-iteration-count: infinite;
