@@ -171,11 +171,16 @@ img{
         
     }
 
-    
+    header .navbar .btn{
+        margin-left: 5px;
+    }
 
     header .navbar .btn a{
         font-size: 10px;
+
     }
+
+    
 
     header{
         height: 45px;
